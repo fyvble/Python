@@ -20,6 +20,9 @@ def mean_calc(a, b):
   print(count_num / count)    
     
 
-a, b = int(input('Введите число a: ')), int(input('Введите число b: '))
+a, b = int(input('Введите левую границу: ')), int(input('Введите правую границу: '))
+
+if a > b:
+  a, b = b, a
 
 mean_calc(a, b)
