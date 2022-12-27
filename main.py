@@ -10,6 +10,8 @@
 Первая задача на обработку: 13434
 """
 def numeral_count(num):
+  if num < 0:
+    return 0
   count = 0
   while num > 0:
     num //= 10
